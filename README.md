@@ -5,7 +5,7 @@ A Python FastAPI web application to shorten URLs with an **automated CI/CD pipel
 ## Tech Stack
 - **Backend:** Python, FastAPI
 - **Containerization:** Docker
-- **CI/CD:** Jenkins
+- **CI/CD:** Jenkins Freestyle Job
 - **Version Control:** GitHub
 
 ## Features
@@ -41,3 +41,6 @@ docker run -d -p 8000:8000 url-shortener-app
 
 ## App Screenshot
 ![App Screenshot](assets/app_screenshot.png)
+
+## Jenkins-Freestyle-Console-Output Screenshot
+[jenkins Screenshot](./assets/jenkins_console_output.png)
