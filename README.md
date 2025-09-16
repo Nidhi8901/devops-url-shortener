@@ -56,9 +56,7 @@ This project uses a Jenkins Freestyle job to automate CI/CD.
 The job runs a Windows batch command to:
 
 Build the Docker image
-
 Log in to Docker Hub
-
 Push the Docker image
 
 Console Output Screenshots
