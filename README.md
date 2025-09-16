@@ -1,12 +1,16 @@
 # DevOps URL Shortener
 
-A Python FastAPI web application to shorten URLs with an **automated CI/CD pipeline** using Jenkins and Docker.
+A Python FastAPI web application to shorten URLs with an **automated CI/CD pipeline** using Jenkins Freestyle and Docker.
+
+---
 
 ## Tech Stack
 - **Backend:** Python, FastAPI
 - **Containerization:** Docker
-- **CI/CD:** Jenkins Freestyle Job
+- **CI/CD:** Jenkins (Freestyle Job)
 - **Version Control:** GitHub
+
+---
 
 ## Features
 - Shorten long URLs into tiny links
@@ -14,17 +18,21 @@ A Python FastAPI web application to shorten URLs with an **automated CI/CD pipel
 - Fully automated Docker build and push
 - CI/CD pipeline demonstrates DevOps workflow
 
+---
+
 ## CI/CD Flow
-GitHub → Jenkins → Docker Hub → Docker Container
-- Jenkins pulls the latest code from GitHub
-- Builds Docker image for the app
-- Logs into Docker Hub using credentials
-- Pushes the Docker image to Docker Hub
+GitHub → Jenkins Freestyle → Docker Hub → Docker Container  
+- Jenkins pulls the latest code from GitHub  
+- Builds Docker image for the app  
+- Logs into Docker Hub using credentials  
+- Pushes the Docker image to Docker Hub  
+
+---
 
 ## How to Run Locally
 ```bash
 # Clone the repo
-git clone https://github.com/nidhi8901/devops-url-shortener.git
+git clone https://github.com/Nidhi8901/devops-url-shortener.git
 cd devops-url-shortener
 
 # Install dependencies
@@ -39,11 +47,21 @@ docker build -t url-shortener-app .
 # Run Docker container
 docker run -d -p 8000:8000 url-shortener-app
 
+
 ## App Screenshot
 ![App Screenshot](assets/app_screenshot.png)
 
 ## Jenkins Console Output
+This project uses a Jenkins Freestyle job to automate CI/CD.
+The job runs a Windows batch command to:
 
+Build the Docker image
+
+Log in to Docker Hub
+
+Push the Docker image
+
+Console Output Screenshots
 ![Console Output 1](assets/jenkins_console_output_1.png)
 ![Console Output 2](assets/jenkins_console_output_2.png)
 ![Console Output 3](assets/jenkins_console_output_3.png)
