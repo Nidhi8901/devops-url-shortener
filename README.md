@@ -43,4 +43,4 @@ docker run -d -p 8000:8000 url-shortener-app
 ![App Screenshot](assets/app_screenshot.png)
 
 ## Jenkins-Freestyle-Console-Output Screenshot
-[jenkins Screenshot](./assets/jenkins_console_output.png)
+![Jenkins Screenshot](assets/jenkins_console_output.png)
