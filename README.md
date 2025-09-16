@@ -39,3 +39,5 @@ docker build -t url-shortener-app .
 # Run Docker container
 docker run -d -p 8000:8000 url-shortener-app
 
+## App Screenshot
+![App Screenshot](assets/app_screenshot.png)
